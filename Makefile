@@ -605,6 +605,8 @@ KBUILD_CFLAGS   += $(call cc-disable-warning,unused-result,)
 KBUILD_CFLAGS   += $(call cc-disable-warning,stringop-overflow,)
 KBUILD_CFLAGS   += $(call cc-disable-warning,sizeof-pointer-memaccess,)
 KBUILD_CFLAGS   += $(call cc-disable-warning,packed-not-aligned,)
+KBUILD_CFLAGS   += $(call cc-disable-warning,incompatible-pointer-types,)
+KBUILD_CFLAGS   += $(call cc-disable-warning,tautological-compare,)
 
 # Needed to unbreak GCC 7.x and above
 KBUILD_CFLAGS   += $(call cc-option,-fno-store-merging,)
